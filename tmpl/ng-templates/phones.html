@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <td colspan="3">
+        <a href="#!new" class="btn btn-success">Naujas</a>
+      </td>
+    </tr>
+    <tr>
+      <th>Eil. nr.</th>
+      <th>Vardas pavardė</th>
+      <th>Telefono nr.</th>
+    </tr>
+  </thead>
+  <tbody ng-controller="listPhoneNumbersController">
+    <tr ng-repeat="number in numbers">
+      <td>{{$index + 1}}.</td>
+      <td>{{number.name + ' ' + number.surname}}</td>
+      <td>{{number.phone_number}}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <a href="#!new" class="btn btn-success">Naujas</a>
+      </td>
+    </tr>
+  </tfoot>
+  
+</table>

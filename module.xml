@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+  <name>mod_angularjs</name>
+  <files>
+    <filename module="mod_angularjs">mod_angularjs.php</filename>
+    <folder>tmpl</folder>
+    <filename>helper.php</filename>
+    
+  </files>
+</extension>
